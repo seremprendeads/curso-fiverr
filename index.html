@@ -37,6 +37,8 @@
   background-repeat: no-repeat;
   }
 
+ 
+
 
     </style>
 </head>
@@ -63,29 +65,28 @@
         </button>
       </div>
       
-      <!-- Video placeholder + carga on demand -->
+      <!-- Video placeholder con miniatura -->
       <div class="md:w-1/2 flex justify-center w-full">
         <div
-          class="youtube-placeholder relative w-full max-w-xs sm:max-w-sm md:max-w-md cursor-pointer"
+          class="youtube-placeholder relative w-full max-w-xs sm:max-w-sm md:max-w-md cursor-pointer aspect-video rounded-lg overflow-hidden"
           data-video-id="NhO-4E1hC1k"
         >
-          <!-- Miniatura de YouTube -->
+          <!-- Miniatura -->
           <img
             src="https://img.youtube.com/vi/NhO-4E1hC1k/hqdefault.jpg"
-            class="w-full rounded-lg"
+            class="w-full h-full object-cover"
             alt="Placeholder video"
           />
-          <!-- Icono Play centrado -->
+          <!-- Ícono Play centrado -->
           <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <i class="fas fa-play-circle text-white text-6xl"></i>
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </header>
-
 
 
     <!-- Path to Success -->
@@ -418,69 +419,69 @@
   </div>
 </section>
 
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 md:px-12">
+    <h2 class="text-3xl font-bold text-center mb-12">Preguntas frecuentes...</h2>
 
-
-    <!-- FAQ -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 md:px-12 ">
-            <h2 class="text-3xl font-bold text-center mb-12">Preguntas frecuentes...</h2>
-            
-               <!-- FAQ Item 1 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
-                    <span class="font-bold">¿Necesito experiencia previa para unirme al programa?</span>
-                    <i class="fas fa-chevron-down text-blue-500"></i>
-                </button>
-                <div class="accordion-content p-4 bg-white hidden">
-                    <p>No, el programa está diseñado para principiantes ...</p>
-                </div>
-                </div>
-                <!-- FAQ Item 2 -->
-                 <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
-                        <span class="font-bold">¿Este programa es solo para diseñadores o puedo aplicarlo si ofrezco otros servicios digitales?</span>
-                        <i class="fas fa-chevron-down text-blue-500"></i>
-                    </button>
-                    <div class="accordion-content p-4 bg-white">
-                        <p>El programa está diseñado para funcionar con cualquier servicio digital que puedas ofrecer en Fiverr: redacción, traducción, programación, marketing digital, edición de video, diseño, consultoría, y muchos más. Las estrategias son adaptables a tu nicho específico.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 3 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
-                        <span class="font-bold">¿Cuánto tiempo toma conseguir mis primeras ventas?</span>
-                        <i class="fas fa-chevron-down text-blue-500"></i>
-                    </button>
-                    <div class="accordion-content p-4 bg-white">
-                        <p>La mayoría de nuestros alumnos consiguen sus primeras ventas entre 2 y 4 semanas después de implementar nuestras estrategias. Sin embargo, esto puede variar dependiendo de tu nicho, la calidad de tu perfil y tu dedicación para seguir el programa paso a paso.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 4 -->
-              <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
-                        <span class="font-bold">¿Cómo funcionan las sesiones personalizadas?</span>
-                        <i class="fas fa-chevron-down text-blue-500"></i>
-                    </button>
-                    <div class="accordion-content p-4 bg-white">
-                        <p>Las sesiones se realizan por videollamada de 45 minutos donde revisamos tu perfil, analizamos tus ofertas y respondemos todas tus dudas específicas. Adaptamos nuestras estrategias a tu caso particular para maximizar tus resultados.</p>
-                    </div>
-                </div>
-                
-                <!-- FAQ Item 5 -->
-           <div class="border border-gray-200 rounded-lg overflow-hidden">
-                <button class="accordion-header w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
-                        <span class="font-bold">¿En cuánto tiempo voy a ganar 1000 USD vendiendo en Fiverr?</span>
-                        <i class="fas fa-chevron-down text-blue-500"></i>
-                    </button>
-                    <div class="accordion-content p-4 bg-white">
-                        <p>Con dedicación constante, la mayoría de nuestros alumnos alcanzan los 1000 USD mensuales entre 4-6 meses después de comenzar. Seguimos un plan de escalamiento progresivo que incrementa tus ingresos gradualmente hasta llegar y superar esta meta.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <details class="border border-gray-200 rounded-lg overflow-hidden">
+        <summary class="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+          <span class="font-bold text-left">¿Necesito experiencia previa para unirme al programa?</span>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </summary>
+        <div class="p-4 bg-white">
+          <p>No, el programa está diseñado para principiantes sin experiencia previa. Vas a aprender todo desde cero, paso a paso, con ejemplos prácticos y estrategias probadas.</p>
         </div>
-    </section>
+      </details>
+
+      <!-- FAQ Item 2 -->
+      <details class="border border-gray-200 rounded-lg overflow-hidden">
+        <summary class="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+          <span class="font-bold text-left">¿Este programa es solo para diseñadores o puedo aplicarlo si ofrezco otros servicios digitales?</span>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </summary>
+        <div class="p-4 bg-white">
+          <p>El programa está diseñado para funcionar con cualquier servicio digital que puedas ofrecer en Fiverr: redacción, traducción, programación, marketing digital, edición de video, diseño, consultoría, y muchos más. Las estrategias son adaptables a tu nicho específico.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 3 -->
+      <details class="border border-gray-200 rounded-lg overflow-hidden">
+        <summary class="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+          <span class="font-bold text-left">¿Cuánto tiempo toma conseguir mis primeras ventas?</span>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </summary>
+        <div class="p-4 bg-white">
+          <p>La mayoría de nuestros alumnos consiguen sus primeras ventas entre 2 y 4 semanas después de implementar nuestras estrategias. Sin embargo, esto puede variar dependiendo de tu nicho, la calidad de tu perfil y tu dedicación para seguir el programa paso a paso.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 4 -->
+      <details class="border border-gray-200 rounded-lg overflow-hidden">
+        <summary class="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+          <span class="font-bold text-left">¿Cómo funcionan las sesiones personalizadas?</span>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </summary>
+        <div class="p-4 bg-white">
+          <p>Las sesiones se realizan por videollamada de 45 minutos donde revisamos tu perfil, analizamos tus ofertas y respondemos todas tus dudas específicas. Adaptamos nuestras estrategias a tu caso particular para maximizar tus resultados.</p>
+        </div>
+      </details>
+
+      <!-- FAQ Item 5 -->
+      <details class="border border-gray-200 rounded-lg overflow-hidden">
+        <summary class="w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition cursor-pointer">
+          <span class="font-bold text-left">¿En cuánto tiempo voy a ganar 1000 USD vendiendo en Fiverr?</span>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </summary>
+        <div class="p-4 bg-white">
+          <p>Con dedicación constante, la mayoría de nuestros alumnos alcanzan los 1000 USD mensuales entre 4-6 meses después de comenzar. Seguimos un plan de escalamiento progresivo que incrementa tus ingresos gradualmente hasta llegar y superar esta meta.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
 
     <!-- Final CTA -->
     <section class="py-16 gradient-bg text-white text-center background">
@@ -495,16 +496,17 @@
                 </button>
             </div>
             
-            <div class="mt-10 flex justify-center space-x-6">
+                    <div class="mt-10 flex flex-col items-center space-y-4 md:flex-row md:justify-center md:space-y-0 md:space-x-6">
                 <div class="bg-white bg-opacity-10 rounded-full p-4 flex items-center space-x-2">
                     <i class="fas fa-shield-alt text-xl text-green-300"></i>
-                    <span>Garantía de satisfacción 30 días</span>
+                    <span class="text-center text-sm md:text-base">Garantía de satisfacción 30 días</span>
                 </div>
                 <div class="bg-white bg-opacity-10 rounded-full p-4 flex items-center space-x-2">
                     <i class="fas fa-lock text-xl text-green-300"></i>
-                    <span>Pago 100% seguro</span>
+                    <span class="text-center text-sm md:text-base">Pago 100% seguro</span>
                 </div>
-            </div>
+                </div>
+
         </div>
     </section>
 
@@ -513,7 +515,10 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p>Copyright © 2023 Claves de Diseño Online</p>
+                      <div class="py-8 text-center text-sm text-gray-400">&copy;&nbsp;<script>new Date().getFullYear()>2017&&document.write(" "+new Date().getFullYear());</script>,
+       Monetiza Tu Hobby. 
+
+      </div>
                 </div>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
@@ -554,22 +559,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<!-- Script global: convierte placeholders en iframes al clic -->
+
 <script>
   document.querySelectorAll('.youtube-placeholder').forEach(el => {
     el.addEventListener('click', () => {
       const id = el.dataset.videoId;
-      // Crear iframe
+
+      // Crear iframe sin mute y con controles
       const iframe = document.createElement('iframe');
-      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&controls=0`;
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&controls=1&playsinline=1`;
       iframe.frameBorder = '0';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       iframe.allowFullscreen = true;
-      iframe.className = 'absolute inset-0 w-full h-full rounded-t-lg';
+      iframe.className = 'w-full h-full';
 
-      // Envolver en aspect-[9/16]
+      // Envolver en aspect-video para mantener proporción 16:9
       const wrapper = document.createElement('div');
-      wrapper.className = 'aspect-[9/16] relative';
+      wrapper.className = 'aspect-video w-full rounded-lg overflow-hidden';
       wrapper.appendChild(iframe);
 
       // Sustituir el placeholder
@@ -577,6 +583,29 @@ document.addEventListener("DOMContentLoaded", () => {
       el.appendChild(wrapper);
     }, { once: true });
   });
+</script>
+<script>
+  document.querySelectorAll('.youtube-placeholder').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.videoId;
 
+      // Crear el iframe sin mute y con controles
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&controls=1&playsinline=1`;
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.className = 'w-full h-full';
+
+      // Envolver en contenedor con misma proporción
+      const wrapper = document.createElement('div');
+      wrapper.className = 'aspect-[9/16] w-full rounded-t-lg overflow-hidden';
+      wrapper.appendChild(iframe);
+
+      el.innerHTML = '';
+      el.appendChild(wrapper);
+    }, { once: true });
+  });
+</script>
  </body>
  </html>
