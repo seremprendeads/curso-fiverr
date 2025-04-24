@@ -41,33 +41,50 @@
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
-    <!-- Hero Section -->
-    <header class="gradient-bg text-white py-16 background">
-        <div class="container mx-auto px-4 md:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-6xl md:text-4xl lg:text-5xl font-bold mb-4">Conviértete en un freelancer exitoso</h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Gana <span class="text-yellow-300">al menos $1000 USD al mes</span> en Fiverr con nuestro método</h2>
-                    <p class="text-lg mb-8">Aprende paso a paso cómo vender tus servicios digitales en Fiverr con la guía de expertos que han generado más de 200.000 USD en la plataforma. No importa tu habilidad, si puedes ofrecer un servicio digital, puedes monetizarlo.</p>
-                    <button class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg flex items-center justify-center">
-                        <span>¡Quiero vivir de mi pasión!</span>
-                        <i class="fas fa-arrow-right ml-2"></i>
-                    </button>
-                </div>
-                <div class="md:w-1/2 flex justify-center">
-                    <div class="relative w-full max-w-md bg-white rounded-lg shadow-2xl p-2">
-                        <div class="aspect-w-16 aspect-h-9 relative">
-                           <iframe width="435" height="315" class="rounded-lg" src="https://www.youtube.com/embed/NhO-4E1hC1k?si=WwHHOm6Y6WWRKFrR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Hero Section -->
+<header class="gradient-bg text-white py-16 background">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      
+      <!-- Texto -->
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-5xl md:text-4xl lg:text-5xl font-bold mb-4">
+          Conviértete en un freelancer exitoso
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+          Gana <span class="text-yellow-300">$1000 USD al mes</span> en Fiverr
+        </h2>
+        <p class="text-lg mb-8">
+          Aprende paso a paso cómo vender tus servicios digitales en Fiverr con la guía de expertos que han generado más de 200.000 USD en la plataforma. No importa tu habilidad, si puedes ofrecer un servicio digital, puedes monetizarlo.
+        </p>
+        <button class="cta-button bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg flex items-center justify-center">
+          <span>¡Quiero vivir de mi pasión!</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+      
+      <!-- Video responsive mejorado -->
+      <div class="md:w-1/2 flex justify-center w-full">
+        <!-- En móviles ocupa todo el ancho; en md y up, hasta max-w-md -->
+        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
+          <div class="aspect-video">
+            <iframe
+              class="absolute inset-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/NhO-4E1hC1k?si=WwHHOm6Y6WWRKFrR&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
-    </header>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
 
     <!-- Path to Success -->
     <section class="py-16 bg-white">
@@ -258,6 +275,146 @@
         </div>
     </section>
 
+ <!-- Testimonials --> 
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Ellos te cuentan su experiencia con Monetiza tu Hobbie...
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+        <!-- Video responsive -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
+            <div class="aspect-[9/16] relative">
+              <iframe
+                class="absolute inset-0 w-full h-full rounded-t-lg"
+                src="https://www.youtube.com/embed/6kZeCUXymf4"
+                title="Testimonio Monetiza tu Hobbie Frank Rod"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Texto -->
+        <div class="p-4">
+          <h4 class="font-bold mb-1">Frank Rod</h4>
+          <p class="text-gray-600 text-sm mb-2">@frankrodfilms</p>
+          <div class="flex">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+        <div class="flex justify-center">
+          <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
+            <div class="aspect-[9/16] relative">
+              <iframe
+                class="absolute inset-0 w-full h-full rounded-t-lg"
+                src="https://www.youtube.com/embed/LEhjE4-M3wc"
+                title="Testimonio Monetiza tu Hobbie Andrés Muñoz"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold mb-1">Andrés Muñoz</h4>
+          <p class="text-gray-600 text-sm mb-2">@grafoandrés</p>
+          <div class="flex">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+        <div class="flex justify-center">
+          <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
+            <div class="aspect-[9/16] relative">
+              <iframe
+                class="absolute inset-0 w-full h-full rounded-t-lg"
+                src="https://www.youtube.com/embed/sNXflzjfYRc"
+                title="Testimonio Monetiza tu Hobbie Amir Giquiardo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold mb-1">Amir Urquiajo</h4>
+          <p class="text-gray-600 text-sm mb-2">@messy_gentile</p>
+          <div class="flex">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
+        <div class="flex justify-center">
+          <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
+            <div class="aspect-[9/16] relative">
+              <iframe
+                class="absolute inset-0 w-full h-full rounded-t-lg"
+                src="https://www.youtube.com/embed/GRRdesDa2Bg"
+                title="Testimonio Monetiza tu Hobbie Wilmer Chacón"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold mb-1">Wilmer Chacón</h4>
+          <p class="text-gray-600 text-sm mb-2">@wilmervega27</p>
+          <div class="flex">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <!-- FAQ -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 md:px-12 ">
@@ -351,7 +508,7 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p>Copyright © 2025</p>
+                    <p>Copyright © 2023 Claves de Diseño Online</p>
                 </div>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
@@ -362,38 +519,35 @@
         </div>
     </footer>
 
-<!-- Script para toggle usando la clase hidden -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const headers = document.querySelectorAll(".accordion-header");
-    const contents = document.querySelectorAll(".accordion-content");
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".accordion-header");
 
-    headers.forEach(header => {
-      header.addEventListener("click", () => {
-        const content = header.nextElementSibling;
-        const icon    = header.querySelector("i");
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const icon    = header.querySelector("i");
 
-        // Cerrar todos menos el actual
-        contents.forEach(c => {
-          if (c !== content) {
-            c.classList.add("hidden");
-            c.previousElementSibling
-             .querySelector("i")
-             .classList.replace("fa-chevron-up", "fa-chevron-down");
-          }
-        });
-
-        // Toggle del actual
-        if (content.classList.contains("hidden")) {
-          content.classList.remove("hidden");
-          icon.classList.replace("fa-chevron-down", "fa-chevron-up");
-        } else {
-          content.classList.add("hidden");
-          icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+      // Cerrar todas las respuestas menos la actual
+      document.querySelectorAll(".accordion-content").forEach(item => {
+        if (item !== content) {
+          item.hidden = true;
+          item.previousElementSibling.querySelector("i")
+              .classList.replace("fa-chevron-up", "fa-chevron-down");
         }
       });
+
+      // Alternar visibilidad de la respuesta clicada
+      if (content.hidden) {
+        content.hidden = false;
+        icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+      } else {
+        content.hidden = true;
+        icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+      }
     });
   });
+});
 </script>
 
  </body>
