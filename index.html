@@ -63,20 +63,21 @@
         </button>
       </div>
       
-      <!-- Video responsive + lazy -->
+      <!-- Video placeholder + carga on demand -->
       <div class="md:w-1/2 flex justify-center w-full">
-        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
-          <div class="aspect-video">
-            <iframe
-              loading="lazy"
-              class="absolute inset-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/NhO-4E1hC1k?si=WwHHOm6Y6WWRKFrR&amp;controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+        <div
+          class="youtube-placeholder relative w-full max-w-xs sm:max-w-sm md:max-w-md cursor-pointer"
+          data-video-id="NhO-4E1hC1k"
+        >
+          <!-- Miniatura de YouTube -->
+          <img
+            src="https://img.youtube.com/vi/NhO-4E1hC1k/hqdefault.jpg"
+            class="w-full rounded-lg"
+            alt="Placeholder video"
+          />
+          <!-- Icono Play centrado -->
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <i class="fas fa-play-circle text-white text-6xl"></i>
           </div>
         </div>
       </div>
@@ -289,18 +290,18 @@
       <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
         <div class="flex justify-center">
           <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
-            <div class="aspect-[9/16] relative">
-              <iframe
-                loading="lazy"
-                class="absolute inset-0 w-full h-full rounded-t-lg"
-                src="https://www.youtube.com/embed/6kZeCUXymf4"
-                title="Testimonio Monetiza tu Hobbie Frank Rod"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            <div
+              class="aspect-[9/16] relative youtube-placeholder cursor-pointer"
+              data-video-id="6kZeCUXymf4"
+            >
+              <img
+                src="https://img.youtube.com/vi/6kZeCUXymf4/hqdefault.jpg"
+                class="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                alt="Testimonio Frank Rod"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <i class="fas fa-play-circle text-white text-6xl"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -316,23 +317,23 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Testimonial 2 -->
       <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
         <div class="flex justify-center">
           <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
-            <div class="aspect-[9/16] relative">
-              <iframe
-                loading="lazy"
-                class="absolute inset-0 w-full h-full rounded-t-lg"
-                src="https://www.youtube.com/embed/LEhjE4-M3wc"
-                title="Testimonio Monetiza tu Hobbie Andrés Muñoz"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            <div
+              class="aspect-[9/16] relative youtube-placeholder cursor-pointer"
+              data-video-id="LEhjE4-M3wc"
+            >
+              <img
+                src="https://img.youtube.com/vi/LEhjE4-M3wc/hqdefault.jpg"
+                class="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                alt="Testimonio Andrés Muñoz"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <i class="fas fa-play-circle text-white text-6xl"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -348,23 +349,23 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Testimonial 3 -->
       <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
         <div class="flex justify-center">
           <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
-            <div class="aspect-[9/16] relative">
-              <iframe
-                loading="lazy"
-                class="absolute inset-0 w-full h-full rounded-t-lg"
-                src="https://www.youtube.com/embed/sNXflzjfYRc"
-                title="Testimonio Monetiza tu Hobbie Amir Giquiardo"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            <div
+              class="aspect-[9/16] relative youtube-placeholder cursor-pointer"
+              data-video-id="sNXflzjfYRc"
+            >
+              <img
+                src="https://img.youtube.com/vi/sNXflzjfYRc/hqdefault.jpg"
+                class="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                alt="Testimonio Amir Urquiajo"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <i class="fas fa-play-circle text-white text-6xl"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -380,23 +381,23 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Testimonial 4 -->
       <div class="testimonial-card bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300">
         <div class="flex justify-center">
           <div class="w-full max-w-xs sm:max-w-sm md:max-w-full">
-            <div class="aspect-[9/16] relative">
-              <iframe
-                loading="lazy"
-                class="absolute inset-0 w-full h-full rounded-t-lg"
-                src="https://www.youtube.com/embed/GRRdesDa2Bg"
-                title="Testimonio Monetiza tu Hobbie Wilmer Chacón"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+            <div
+              class="aspect-[9/16] relative youtube-placeholder cursor-pointer"
+              data-video-id="GRRdesDa2Bg"
+            >
+              <img
+                src="https://img.youtube.com/vi/GRRdesDa2Bg/hqdefault.jpg"
+                class="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                alt="Testimonio Wilmer Chacón"
+              />
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <i class="fas fa-play-circle text-white text-6xl"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -553,6 +554,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<!-- Script global: convierte placeholders en iframes al clic -->
+<script>
+  document.querySelectorAll('.youtube-placeholder').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.videoId;
+      // Crear iframe
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&controls=0`;
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.className = 'absolute inset-0 w-full h-full rounded-t-lg';
+
+      // Envolver en aspect-[9/16]
+      const wrapper = document.createElement('div');
+      wrapper.className = 'aspect-[9/16] relative';
+      wrapper.appendChild(iframe);
+
+      // Sustituir el placeholder
+      el.innerHTML = '';
+      el.appendChild(wrapper);
+    }, { once: true });
+  });
 
  </body>
  </html>
